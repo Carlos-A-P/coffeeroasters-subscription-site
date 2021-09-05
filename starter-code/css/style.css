@@ -1,0 +1,77 @@
+:root {
+	--dark-cyan: rgb(14, 135, 132);
+	--dark-grey-blue: rgb(51, 61, 75);
+	--pale-orange: rgb(253, 214, 186);
+	--light-cream: rgb(254, 252, 247);
+	--grey: rgb(131, 136, 143);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Barlow", sans-serif;
+	font-family: "Fraunces", serif;
+	font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+.collection {
+	font-family: "Fraunces", serif;
+	color: var(--dark-grey-blue);
+}
+
+.collection {
+	font-size: 40px;
+	color: var(--grey);
+}
+
+h1 {
+	font-size: 40px;
+	color: var(--light-cream);
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	border-radius: 6px;
+	width: 217px;
+	height: 56px;
+	background-color: var(--dark-cyan);
+}
+
+.btn:hover {
+	background-color: rgb(102, 210, 207);
+}
+
+.btn.disabled {
+	background-color: rgb(226, 222, 219);
+}
+
+.btn a {
+	font-family: "Fraunces", serif;
+	color: var(--light-cream);
+	font-size: 18px;
+}
