@@ -16,8 +16,9 @@
 
 body {
 	font-family: "Barlow", sans-serif;
-	font-family: "Fraunces", serif;
-	font-size: 16px;
+	font-size: 15px;
+	padding: 32px 24px;
+	background-color: var(--light-cream);
 }
 
 h1,
@@ -29,14 +30,8 @@ h4,
 	color: var(--dark-grey-blue);
 }
 
-.collection {
-	font-size: 40px;
-	color: var(--grey);
-}
-
-h1 {
-	font-size: 40px;
-	color: var(--light-cream);
+p {
+	line-height: 25px;
 }
 
 h2 {
@@ -44,22 +39,156 @@ h2 {
 }
 
 h3 {
-	font-size: 28px;
+	font-size: 24px;
 }
 
 h4 {
 	font-size: 24px;
 }
 
-a {
-	text-decoration: none;
+section {
+	margin-bottom: 120px;
 }
 
+/* header */
+header {
+	margin-bottom: 40px;
+}
+
+.mobile {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo img {
+	width: 163px;
+}
+/* /header */
+/* section-1 index */
+.section-1 {
+	background-image: url(../assets/home/mobile/image-hero-coffeepress.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding: 95px 20px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 40px;
+	margin-bottom: 20px;
+	font-weight: 900;
+}
+
+.section-1 p {
+	line-height: 25px;
+	margin-bottom: 35px;
+	font-size: 15px;
+	opacity: 0.9;
+}
+
+.cream-text-color {
+	color: var(--light-cream);
+}
+/* /section-1 index */
+
+/* section-2 index */
+.section-2 {
+	text-align: center;
+}
+
+.collection {
+	font-size: 40px;
+	color: var(--grey);
+	background: -webkit-linear-gradient(rgb(131, 136, 143), rgb(254, 252, 247));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 2rem;
+}
+
+.flavor {
+	padding: 0 20px;
+}
+
+.flavor h3 {
+	margin-bottom: 12px;
+}
+
+.flavor:nth-child(-n + 3) {
+	margin-bottom: 48px;
+}
+
+.flavors img {
+	width: 200px;
+}
+/* /section-2 index */
+
+/* section-3 index */
+.section-3 {
+	text-align: center;
+}
+
+.section-3 h2 {
+	margin-bottom: 26px;
+}
+
+.section-header {
+	background: linear-gradient(
+		to bottom,
+		rgb(51, 61, 75) 31%,
+		rgb(51, 61, 75) 31%,
+		#2c343e 31%
+	);
+	border-radius: 10px;
+	padding: 64px 24px;
+	height: 900px;
+}
+
+.s-3-boxes {
+	display: flex;
+	flex-direction: column;
+	margin: -37rem auto 0;
+	width: 279px;
+	gap: 24px;
+}
+
+.box {
+	background-color: var(--dark-cyan);
+	border-radius: 6px;
+	padding: 72px 0 52px;
+}
+
+.box img {
+	width: 72px;
+	margin-bottom: 56px;
+}
+
+.box h3 {
+	color: var(--light-cream);
+	margin-bottom: 24px;
+}
+
+.box p {
+	padding: 0 34px;
+}
+
+.section-3 h2,
+.section-3 p {
+	color: var(--light-cream);
+}
+
+.section-3 h2 {
+	font-size: 28px;
+}
+
+/* /section-3 index */
 .btn {
 	border-radius: 6px;
 	width: 217px;
 	height: 56px;
 	background-color: var(--dark-cyan);
+	margin: 0 auto;
+	padding: 16px 30px;
 }
 
 .btn:hover {
@@ -71,7 +200,9 @@ a {
 }
 
 .btn a {
+	text-decoration: none;
 	font-family: "Fraunces", serif;
 	color: var(--light-cream);
 	font-size: 18px;
+	font-weight: bold;
 }
