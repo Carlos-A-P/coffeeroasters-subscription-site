@@ -494,4 +494,53 @@ h1 {
 	color: white;
 }
 
+.s-plan {
+	margin-bottom: 0;
+}
+
+.step-p:nth-child(-n + 2) {
+	margin-bottom: 56px;
+}
 /* /p-2 */
+
+/* p-3 */
+.left {
+	display: none;
+}
+
+.accordion {
+	text-align: left;
+}
+
+.accordion h2 {
+	font-size: 24px;
+	color: var(--grey);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 60px;
+	margin-bottom: 32px;
+}
+
+.accordion h2::after {
+	content: url(../assets/plan/desktop/icon-arrow.svg);
+	transform: rotate(180deg);
+}
+
+.card-options {
+	/* height: 0; */
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.card-options:nth-child(-n + 2) {
+	margin-bottom: 110px;
+}
+
+.card {
+	padding: 25px;
+	background-color: #979797;
+}
+
+/* /p-3 */
