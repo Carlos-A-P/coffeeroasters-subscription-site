@@ -19,6 +19,7 @@ body {
 	font-size: 15px;
 	padding: 32px 24px;
 	background-color: var(--light-cream);
+	text-align: center;
 }
 
 h1,
@@ -128,7 +129,8 @@ h1 {
 	text-align: center;
 }
 
-.section-3 h2 {
+.section-3 h2,
+.a-3 h2 {
 	margin-bottom: 26px;
 }
 
@@ -371,3 +373,105 @@ button.nav_toggle {
 	visibility: hidden;
 	width: 0;
 }
+
+/* -------------------about */
+/* a-1 */
+.a-1 {
+	background-image: url(../assets/about/mobile/image-hero-whitecup.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right 0px top 0;
+	border-radius: 10px;
+	padding: 111px 24px;
+}
+
+.a-1 p,
+h1 {
+	color: var(--light-cream);
+}
+
+.a-1 h1 {
+	font-size: 28px;
+}
+/* /a-1 */
+
+/* a-2 */
+.commitment {
+	background-image: url(../assets/about/mobile/image-commitment.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right 0px top 0;
+	border-radius: 10px;
+	width: 327px;
+	height: 400px;
+	margin-bottom: 48px;
+}
+
+.a-2 h2 {
+	font-size: 32px;
+	margin-bottom: 33px;
+}
+
+/* /a-2 */
+
+/* a-3 */
+.a-3-content {
+	background-color: var(--dark-grey-blue);
+	padding: 142px 24px 61px;
+	border-radius: 10px;
+	z-index: 0;
+	position: relative;
+}
+
+.quality {
+	background-image: url(../assets/about/mobile/image-quality.jpg);
+	width: 279px;
+	height: 156px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right 0px top 0;
+	border-radius: 6px;
+	margin: 0 auto -70px;
+	z-index: 2;
+	position: relative;
+}
+
+.a-3,
+.a-3 h2 {
+	color: var(--light-cream);
+}
+
+.a-3 h2 {
+	font-size: 28px;
+	font-weight: 900;
+}
+/* /a-3 */
+
+/* a-4 */
+.a-4 h2 {
+	font-size: 24px;
+	color: var(--grey);
+	margin-bottom: 72px;
+}
+
+.a-4 h3 {
+	font-size: 28px;
+	margin-top: 48px;
+}
+
+.a-4 li {
+	list-style: none;
+}
+
+.a-4 ul {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-top: 24px;
+}
+
+.location:nth-child(-n + 3) {
+	margin-bottom: 88px;
+}
+
+/* /a-4 */

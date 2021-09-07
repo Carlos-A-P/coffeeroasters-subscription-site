@@ -20,13 +20,22 @@
         <div class="logo">
           <img src="assets/shared/desktop/logo.svg" alt="logo">
         </div>
-        <div class="hamburger">
-          <img src="assets/shared/mobile/icon-hamburger.svg" alt="open menu">
-        </div>
+        <button type="button"  onclick="toggleNav()" class="nav_toggle" aria-expanded="false" aria-label="Toggle Navigation">
+          <img id="open-nav" src="assets/shared/mobile/icon-hamburger.svg" alt="open menu">
+          <img id="close-nav" class="hidden" src="assets/shared/mobile/icon-close.svg" alt="close menu">
+        </button>
       </div>
     </header>
-
     <main>
+      <div class="mobile-drop-menu hidden" id="mobile_menu">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="#">Create your plan</a></li>
+          </ul>
+        </nav>
+      </div>
       <section class="p-1">
         <h1>Create a plan</h1>
         <p>Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees from around the globe delivered fresh to your door.</p>
@@ -182,19 +191,21 @@
     </main>
     <footer>
       <div class="logo">
-        <img src="assets/shared/desktop/logo.svg" alt="logo">
+        <img src="assets/home/desktop/white-logo.png" alt="logo">
       </div>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="about.html">About us</a></li>
-          <li><a href="plan.html">Create your plan</a></li>        
-        </ul>
-      </nav>
+      <div class="footer-links">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="#">Create your plan</a></li>        
+          </ul>
+        </nav>      
+      </div>
       <div class="social">
-        <div class="facebook"><a href=""><img src="assets/shared/desktop/icon-facebook.svg" alt="facebook"></a></div>
-        <div class="twitter"><a href=""><img src="assets/shared/desktop/icon-twitter.svg" alt="twitter"></a></div>
-        <div class="instagram"><a href=""><img src="assets/shared/desktop/icon-instagram.svg" alt="instagram"></a></div>
+        <div class="facebook"><a href="#"><img src="assets/shared/desktop/icon-facebook.svg" alt="facebook"></a></div>
+        <div class="twitter"><a href="#"><img src="assets/shared/desktop/icon-twitter.svg" alt="twitter"></a></div>
+        <div class="instagram"><a href="#"><img src="assets/shared/desktop/icon-instagram.svg" alt="instagram"></a></div>
       </div>
       <div class="attribution">
         <p>Coded by <a href="#">Carlos Perez</a></p>

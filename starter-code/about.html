@@ -20,19 +20,30 @@
       <div class="logo">
         <img src="assets/shared/desktop/logo.svg" alt="logo">
       </div>
-      <div class="hamburger">
-        <img src="assets/shared/mobile/icon-hamburger.svg" alt="open menu">
-      </div>
+      <button type="button"  onclick="toggleNav()" class="nav_toggle" aria-expanded="false" aria-label="Toggle Navigation">
+        <img id="open-nav" src="assets/shared/mobile/icon-hamburger.svg" alt="open menu">
+        <img id="close-nav" class="hidden" src="assets/shared/mobile/icon-close.svg" alt="close menu">
+      </button>
     </div>
   </header>
   <main>
+    <div class="mobile-drop-menu hidden" id="mobile_menu">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="plan.html">Create your plan</a></li>
+        </ul>
+      </nav>
+    </div>
     <section class="a-1">
-      <h1>About us</h1>
+      <h1>About Us</h1>
       <p> Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of 
       coffee from around the world. We have since been dedicated to bring the perfect cup - from 
       bean to brew - in every shipment.</p>
     </section>
     <section class="a-2">
+      <div class="commitment"></div>
       <h2>Our commitment</h2>
       <p>  We’re built on a simple mission and a commitment to doing good along the way. We want to 
       make it easy for you to discover and brew the world’s best coffee at home. It all starts 
@@ -44,17 +55,20 @@
       each lot to highlight tasting profiles distinctive to their native growing region.</p>
     </section>
     <section class="a-3">
-      <h2>Uncompromising quality</h2>
-      <p>  Although we work with growers who pay close attention to all stages of harvest and processing, 
-      we employ, on our end, a rigorous quality control program to avoid over-roasting or baking the 
-      coffee dry. Every bag of coffee is tagged with a roast date and batch number. Our goal is to roast 
-      consistent, user-friendly coffee, so that brewing is easy and enjoyable.</p>
-      <div class="quality-image"></div>
+      <div class="quality"></div>
+      <div class="a-3-content">
+        <h2>Uncompromising quality</h2>
+        <p>  Although we work with growers who pay close attention to all stages of harvest and processing, 
+        we employ, on our end, a rigorous quality control program to avoid over-roasting or baking the 
+        coffee dry. Every bag of coffee is tagged with a roast date and batch number. Our goal is to roast 
+        consistent, user-friendly coffee, so that brewing is easy and enjoyable.</p>
+      </div>
+      
     </section>
     <section class="a-4">
       <h2>Our headquarters</h2>
-      <div class="location-1">
-        <div class="country"></div>
+      <div class="location">
+        <div class="country"><img src="assets/about/desktop/illustration-uk.svg" alt="United Kingdom"></div>
         <h3>United Kingdom</h3>
         <ul class="hq-contact">
           <li>68 Asfordby Rd</li>
@@ -63,8 +77,8 @@
           <li>+44 1241 918425</li>
         </ul>
       </div>
-      <div class="location-2">
-        <div class="country"></div>
+      <div class="location">
+        <div class="country"><img src="assets/about/desktop/illustration-canada.svg" alt="Canada"></div>
         <h3>Canada</h3>
         <ul class="hq-contact">
           <li>1528 Eglinton Avenue</li>
@@ -73,8 +87,8 @@
           <li>+1 416 485 2997</li>
         </ul>
       </div>
-      <div class="location-3">
-        <div class="country"></div>
+      <div class="location">
+        <div class="country"><img src="assets/about/desktop/illustration-australia.svg" alt="Australia"></div>
         <h3>Australia</h3>
         <ul class="hq-contact">
           <li>36 Swanston Street</li>
@@ -87,19 +101,21 @@
   </main>
   <footer>
     <div class="logo">
-      <img src="assets/shared/desktop/logo.svg" alt="logo">
+      <img src="assets/home/desktop/white-logo.png" alt="logo">
     </div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="about.html">About us</a></li>
-        <li><a href="plan.html">Create your plan</a></li>        
-      </ul>
-    </nav>
+    <div class="footer-links">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="plan.html">Create your plan</a></li>        
+        </ul>
+      </nav>      
+    </div>
     <div class="social">
-      <div class="facebook"><a href=""><img src="assets/shared/desktop/icon-facebook.svg" alt="facebook"></a></div>
-      <div class="twitter"><a href=""><img src="assets/shared/desktop/icon-twitter.svg" alt="twitter"></a></div>
-      <div class="instagram"><a href=""><img src="assets/shared/desktop/icon-instagram.svg" alt="instagram"></a></div>
+      <div class="facebook"><a href="#"><img src="assets/shared/desktop/icon-facebook.svg" alt="facebook"></a></div>
+      <div class="twitter"><a href="#"><img src="assets/shared/desktop/icon-twitter.svg" alt="twitter"></a></div>
+      <div class="instagram"><a href="#"><img src="assets/shared/desktop/icon-instagram.svg" alt="instagram"></a></div>
     </div>
     <div class="attribution">
       <p>Coded by <a href="#">Carlos Perez</a></p>
