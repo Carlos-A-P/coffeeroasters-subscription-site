@@ -32,7 +32,7 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About us</a></li>
-            <li><a href="#">Create your plan</a></li>
+            <li><a href="plan.html">Create your plan</a></li>
           </ul>
         </nav>
       </div>
@@ -87,8 +87,8 @@
         <div class="right">
           <div class="accordion">
             <div class="acc">
-              <h2>How do you drink your coffee?</h2>
-              <div class="card-options">
+              <h2 data-options>How do you drink your coffee?</h2>
+              <div class="card-options hidden">
                 <div class="card">
                   <h4>Capsule</h4>
                   <p>Compatible with Nespresso systems and similar brewers</p>
@@ -104,68 +104,68 @@
               </div>
             </div>
             <div class="acc">
-              <h2>What type of coffee?</h2>
-              <div class="card-options">
-                <div class="c-1">
+              <h2 data-options>What type of coffee?</h2>
+              <div class="card-options hidden">
+                <div class="card">
                   <h4>Single origin</h4>
                   <p>Distinct, high quality coffee from a specific family-owned farm</p>
                 </div>
-                <div class="c-2">
+                <div class="card">
                   <h4>Decaf</h4>
                   <p>Just like regular coffee, except the caffeine has been removed</p>
                 </div>
-                <div class="c-3">
+                <div class="card">
                   <h4>Blended</h4>
                   <p>Combination of two or three dark roasted beans of organic coffees</p>
                 </div>
               </div>
             </div>
             <div class="acc">
-              <h2>How much would you like?</h2>
-              <div class="card-options">
-                <div class="c-1">
+              <h2 data-options>How much would you like?</h2>
+              <div class="card-options hidden">
+                <div class="card">
                   <h4>250g</h4>
                   <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
                 </div>
-                <div class="c-2">
+                <div class="card">
                   <h4>500g</h4>
                   <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
                 </div>
-                <div class="c-3">
+                <div class="card">
                   <h4>1000g</h4>
                   <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
                 </div>
               </div>
             </div>
             <div class="acc">
-              <h2>Want us to grind them?</h2>
-              <div class="card-options">
-                <div class="c-1">
+              <h2 data-options>Want us to grind them?</h2>
+              <div class="card-options hidden">
+                <div class="card">
                   <h4>Wholebean</h4>
                   <p>Best choice if you cherish the full sensory experience</p>
                 </div>
-                <div class="c-2">
+                <div class="card">
                   <h4>Filter</h4>
                   <p>For drip or pour-over coffee methods such as V60 or Aeropress</p>
                 </div>
-                <div class="c-3">
+                <div class="card">
                   <h4>Cafetiére</h4>
                   <p>Course ground beans specially suited for french press coffee</p>
                 </div>
               </div>
             </div>
             <div class="acc">
-              <h2>How often should we deliver?</h2>
-              <div class="card-options">
-                <div class="c-1">
+              <h2 data-options>How often should we deliver?</h2>
+              <div class="card-options hidden">
+                <div class="card">
                   <h4>Every week</h4>
                   <p>$14.00 per shipment. Includes free first-class shipping.</p>
                 </div>
-                <div class="c-2">
+                <div class="card">
                   <h4>Every 2 weeks</h4>
                   <p>$17.25 per shipment. Includes free priority shipping.</p>
                 </div>
-                <div class="c-3">
+                <div class="card">
                   <h4>Every month</h4>
                   <p>$22.50 per shipment. Includes free priority shipping.</p>
                 </div>
@@ -174,19 +174,23 @@
           </div>
           <div class="summary">
             <p>Order Summary</p>
-            <h3>“I drink coffee _____, with a _____ type of bean. _____ ground ala _____, sent to me _____.”</h3>
-            <div class="btn"><a href="plan.html">Create my plan</a></div>
+            <h3>“I drink coffee as <span></span>, with a <span></span> type of bean. <span></span> ground ala <span></span>, sent to me <span></span>.”</h3>
           </div>
+          <div class="btn" onclick="togglePlan()"><a href="#modal">Create my plan</a></div>
         </div>
       </section>
-      <div class="modal">
-        <h2>Order Summary</h2>
-        <h4>“I drink coffee _____, with a _____ type of bean. _____ ground ala _____, sent to me _____.”</h4>
-        <p>Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout.</p>
-        <div class="checkout">
-          <h3>$_____/month</h3>
-          <div class="btn"><a href="plan.html">Checkout</a></div>
+      <div class="modal hidden" id="modal">
+        <div class="m-content">
+          <h2>Order Summary</h2>
+          <div class="summary-c">
+            <h4>“I drink coffee as <span>Filter</span>, with a <span>Decaf</span> type of bean. <span>250g</span> ground ala <span>Cafetiére</span>, sent to me <span>Every Week</span>.”</h4>
+            <p>Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout.</p>
+            <div class="checkout">
+              <div class="btn" onclick="scroll()"><a href="#">Checkout-$14.00/mo</a></div>
+            </div>          
+          </div>          
         </div>
+        <div class="black-bg"></div>
       </div>
     </main>
     <footer>
@@ -211,6 +215,7 @@
         <p>Coded by <a href="#">Carlos Perez</a></p>
       </div>
     </footer>
+    
   </body>
 
 </html>
