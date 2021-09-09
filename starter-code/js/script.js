@@ -60,14 +60,15 @@ order_summary.addEventListener('click', ()=> {
     togglePlan()
 })
 
-const option = document.getElementsByClassName('card').firstElementChild
-const cardSelected = document.querySelectorAll('card')
+// const option = document.getElementsByClassName('card').firstElementChild
+// const cardSelected = document.querySelectorAll('card')
 const card = document.querySelectorAll('[data-card]')
-
-console.log(card[0].firstElementChild)
+const summary = document.getElementById('summary')
 
 card.forEach(selected => {
     selected.addEventListener('click', () => {
         console.log(selected.firstElementChild.innerText)
     })
 })
+
+console.log(summary.childNodes[1])
