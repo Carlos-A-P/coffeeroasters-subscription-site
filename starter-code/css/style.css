@@ -585,6 +585,12 @@ h3 span {
 	width: 60px;
 	height: 2px;
 	border-bottom: solid 2px rgb(14, 135, 132);
+	color: var(--dark-cyan);
+}
+
+h3 span.full {
+	border-bottom: none;
+	width: auto;
 }
 /* /summary */
 
