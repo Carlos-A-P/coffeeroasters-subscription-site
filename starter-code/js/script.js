@@ -2,6 +2,7 @@ const openNav = document.getElementById('open-nav')
 const closeNav = document.getElementById('close-nav')
 const mobileNav = document.getElementById('mobile_menu')
 const modal = document.getElementById('modal')
+const accOptions = document.querySelectorAll('[data-options]')
 
 function toggleNav() {
     openNav.classList.toggle('hidden')
@@ -9,15 +10,15 @@ function toggleNav() {
     mobileNav.classList.toggle('hidden')
     // window.removeEventListener('scroll', noScroll);
     scroll()
-console.log(mobileNav.classList.contains('hidden'))    
 }
 
-function scroll() {
+function scroll(x) {
     disableScroll()
-    enableScroll()
+    enableScroll(x)
+    console.log(x)     
 }
 
-const accOptions = document.querySelectorAll('[data-options]')
+
 
 accOptions.forEach(acc =>{
     acc.addEventListener('click', () => {
@@ -29,6 +30,7 @@ accOptions.forEach(acc =>{
 
 function togglePlan() {
     modal.classList.toggle('hidden')
+    
 }
 
 function disableScroll() {
@@ -39,13 +41,18 @@ function disableScroll() {
     }
 }
 
-function enableScroll() {
-    if (mobileNav.classList.contains('hidden')){
-        window.onscroll = function() {}
+function enableScroll(y) {
+    if(y === checkout){
+        if (mobileNav.classList.contains('hidden')){
+            window.onscroll = function() {}
+        }   
+    } else {
+        if (mobileNav.classList.contains('hidden')){
+            window.onscroll = function() {}
+        }        
     }
-    
-    if (modal.classList.contains('hidden')){
-        window.onscroll = function() {}
-    }
+    console.log(y) 
+
+
 }   
 
