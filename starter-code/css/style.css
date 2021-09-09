@@ -527,6 +527,10 @@ h1 {
 
 .accordion h2::after {
 	content: url(../assets/plan/desktop/icon-arrow.svg);
+	transform: rotate(0deg);
+}
+
+.accordion h2.open::after {
 	transform: rotate(180deg);
 }
 

@@ -25,16 +25,16 @@ accOptions.forEach(acc =>{
         const listOptions = acc.parentElement.lastElementChild
         // console.log(listOptions)
         listOptions.classList.toggle('hidden')
+        acc.parentElement.firstElementChild.classList.toggle('open')
     })
 })
 
 function togglePlan() {
     modal.classList.toggle('hidden')
-    
+    scroll('_modal')
 }
 
 function disableScroll() {
-    // window.addEventListener('scroll', noscroll)
     
     window.onscroll = () => {
         window.scrollTo(0,0)
@@ -42,8 +42,8 @@ function disableScroll() {
 }
 
 function enableScroll(y) {
-    if(y === checkout){
-        if (mobileNav.classList.contains('hidden')){
+    if(y === '_modal'){
+        if (modal.classList.contains('hidden')){
             window.onscroll = function() {}
         }   
     } else {
@@ -52,7 +52,22 @@ function enableScroll(y) {
         }        
     }
     console.log(y) 
-
-
 }   
 
+
+const order_summary = document.getElementById('order_sum')
+order_summary.addEventListener('click', ()=> {
+    togglePlan()
+})
+
+const option = document.getElementsByClassName('card').firstElementChild
+const cardSelected = document.querySelectorAll('card')
+const card = document.querySelectorAll('[data-card]')
+
+console.log(card[0].firstElementChild)
+
+card.forEach(selected => {
+    selected.addEventListener('click', () => {
+        console.log(selected.firstElementChild.innerText)
+    })
+})
