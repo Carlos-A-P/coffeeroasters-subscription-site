@@ -137,7 +137,7 @@
                 </div>
               </div>
             </div>
-            <div class="acc">
+            <div id="grindOption" class="acc">
               <h2 data-options>Want us to grind them?</h2>
               <div class="card-options hidden">
                 <div class="card" data-card>
@@ -176,14 +176,14 @@
             <p>Order Summary</p>
             <h3 id="summary">“I drink my coffee as <span class=""></span>, with a <span></span> type of bean. <span></span> ground ala <span></span>, sent to me <span></span>.”</h3>
           </div>
-          <div class="btn" onclick="togglePlan()"><a href="#modal">Create my plan</a></div>
+          <button data-button disabled type="button" class="btn" onclick="togglePlan()"><a href="#modal">Create my plan!</a></button>
         </div>
       </section>
       <div class="modal hidden" id="modal">
         <div class="m-content">
           <h2 id='order_sum'>Order Summary</h2>
           <div class="summary-c">
-            <h4>“I drink coffee as <span>Filter</span>, with a <span>Decaf</span> type of bean. <span>250g</span> ground ala <span>Cafetiére</span>, sent to me <span>Every Week</span>.”</h4>
+            <h4 id="modalSummary">“I drink my coffee as <span></span>, with a <span></span> type of bean. <span></span> ground ala <span></span>, sent to me <span></span>.”</h4>
             <p>Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout.</p>
             <div class="checkout">
               <div class="btn"><a href="plan.html">Checkout-$14.00/mo</a></div>

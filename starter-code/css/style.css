@@ -348,10 +348,6 @@ main {
 	background-color: rgb(102, 210, 207);
 }
 
-.btn.disabled {
-	background-color: rgb(226, 222, 219);
-}
-
 .btn a {
 	text-decoration: none;
 	font-family: "Fraunces", serif;
@@ -534,6 +530,14 @@ h1 {
 	transform: rotate(180deg);
 }
 
+.acc.disabled h2.open::after {
+	transform: rotate(0deg);
+}
+
+.acc.disabled {
+	opacity: 0.5;
+}
+
 .card-options {
 	/* height: 0; */
 	display: flex;
@@ -661,4 +665,17 @@ h3 span.full {
 .card-options.hidden {
 	height: 0;
 	margin: 0;
+}
+
+button.btn {
+	display: block;
+	border: none;
+}
+
+button.btn:disabled {
+	background-color: #e2dedb;
+}
+
+.acc.disabled .card-options {
+	display: none;
 }
