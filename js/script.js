@@ -74,9 +74,9 @@ let result
 // adds options for end summary at the press of the button
 card.forEach(selected => {
     selected.addEventListener('click', () => {
-        let choice = selected.firstElementChild.innerText
-        console.log(choice)
-        if (choice === 'Capsule' || choice === 'Filter' || choice === 'Espresso') {
+        let choice = selected.firstElementChild.innerHTML
+        console.log()
+        if (choice === 'Capsule' || choice === 'Espresso') {
             choice1 = choice
         }else if (choice === 'Single origin' || choice === 'Decaf' || choice === 'Blended') {
             choice2 = choice
@@ -84,17 +84,28 @@ card.forEach(selected => {
         if (choice === '250g' || choice === '500g' || choice === '1000g') {
             choice3 = choice
         }
-        if (choice === 'Wholebean' || choice === 'Filter' || choice === 'Cafetiére') {
+        if (choice === 'Wholebean' || choice === 'Cafetiére') {
             choice4 = choice
         }
         if (choice === 'Every week' || choice === 'Every 2 weeks' || choice === 'Every month') {
             choice5 = choice
         }
 
+        const acc1 = selected.parentElement.parentElement.firstElementChild.innerHTML
+        if (choice === 'Filter' && acc1 === 'How do you drink your coffee?') {
+            choice1 = choice
+        } else if (choice === 'Filter' && acc1 !== 'How do you drink your coffee?') {
+            choice4 = choice
+        }
+
         arr = [choice1, choice2, choice3, choice4, choice5]
         if(choice1 === 'Capsule'){
             grindOption.classList.add('disabled')
             capsule()
+
+            if(choice1 !== undefined && choice2 !== undefined && choice3 !== undefined && choice5 !== undefined) {
+                createPlan.removeAttribute('disabled')
+            }            
         }else{
             for(let i=0; i < arr.length; i++){
                 if(arr[i] === undefined){
@@ -109,10 +120,12 @@ card.forEach(selected => {
             result = summary.innerHTML
 
             if(choice1 !== undefined && choice2 !== undefined && choice3 !== undefined && choice4 !== undefined && choice5 !== undefined) {
-            createPlan.removeAttribute('disabled')
-        }
+                createPlan.removeAttribute('disabled')
+            }
         }
 
+
+        
         
         return arr, result
     })
@@ -131,16 +144,16 @@ function capsule() {
     if(choice1 !== undefined && choice2 !== undefined && choice4 !== undefined && choice5 !== undefined) {
         createPlan.removeAttribute('disabled')
     }
+
+
 }
 
 // this inserts the summary into the modal when the button is clicked
 let arr
 function insertChoices(){
-    // let j = 0
-
-    // for(let i=1; i <= 9 ; i = i+2 ){
-    //     modalSummary.childNodes[i].innerText = arr[j]
-    //     j++
-    // }
     modalSummary.innerHTML = result
+}
+
+function priceTotal(){
+    
 }
