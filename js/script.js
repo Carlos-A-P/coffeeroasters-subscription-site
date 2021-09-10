@@ -78,6 +78,7 @@ card.forEach(selected => {
         console.log()
         if (choice === 'Capsule' || choice === 'Espresso') {
             choice1 = choice
+            createPlan.setAttribute('disabled', '')
         }else if (choice === 'Single origin' || choice === 'Decaf' || choice === 'Blended') {
             choice2 = choice
         }
@@ -94,6 +95,7 @@ card.forEach(selected => {
         const acc1 = selected.parentElement.parentElement.firstElementChild.innerHTML
         if (choice === 'Filter' && acc1 === 'How do you drink your coffee?') {
             choice1 = choice
+            createPlan.setAttribute('disabled', '')
         } else if (choice === 'Filter' && acc1 !== 'How do you drink your coffee?') {
             choice4 = choice
         }
@@ -105,6 +107,7 @@ card.forEach(selected => {
 
             if(choice1 !== undefined && choice2 !== undefined && choice3 !== undefined && choice5 !== undefined) {
                 createPlan.removeAttribute('disabled')
+                priceTotal()
             }            
         }else{
             for(let i=0; i < arr.length; i++){
@@ -121,6 +124,7 @@ card.forEach(selected => {
 
             if(choice1 !== undefined && choice2 !== undefined && choice3 !== undefined && choice4 !== undefined && choice5 !== undefined) {
                 createPlan.removeAttribute('disabled')
+                priceTotal()
             }
         }
 
@@ -141,9 +145,9 @@ function capsule() {
     }
     summary.innerHTML = `“I drink my coffee using <span class="full">${choice1}</span>, with a ${arr[1]} type of bean. ${arr[2]}, sent to me ${arr[4]}.”`
     result = summary.innerHTML
-    if(choice1 !== undefined && choice2 !== undefined && choice4 !== undefined && choice5 !== undefined) {
-        createPlan.removeAttribute('disabled')
-    }
+    // if(choice1 !== undefined && choice2 !== undefined && choice4 !== undefined && choice5 !== undefined) {
+    //     createPlan.removeAttribute('disabled')
+    // }
 
 
 }
@@ -155,5 +159,30 @@ function insertChoices(){
 }
 
 function priceTotal(){
-    
+    let weeklyPrice, twoWeekPrice, monthlyPrice, finalPrice
+    const checkout = document.querySelector('[data-checkout]')
+    if (choice3 === '250g'){
+        weeklyPrice = 7.20
+        twoWeekPrice = 9.60 
+        monthlyPrice = 12.00
+    } else if(choice3 === '500g'){
+        weeklyPrice = 13.00
+        twoWeekPrice = 17.50
+        monthlyPrice = 22.00      
+    } else if(choice3 === '1000g'){
+        weeklyPrice = 22.00
+        twoWeekPrice = 32.00
+        monthlyPrice = 42.00
+    }
+
+    // choice === 'Every week' || choice choice === 'Every week' || choice === 'Every 2 weeks' || choice === 'Every month'
+
+    if (choice5 === 'Every week'){
+        finalPrice = weeklyPrice*4
+    }else if(choice5 === 'Every 2 weeks'){
+        finalPrice = twoWeekPrice*2
+    }else if(choice5 === 'Every month'){
+        finalPrice = monthlyPrice
+    }
+    checkout.innerHTML = `Checkout-$${finalPrice.toFixed(2)}/mo`
 }
