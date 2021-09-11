@@ -26,7 +26,6 @@ Your users should be able to:
 
 The interactive subscription page has a number of specific behaviours, which are listed below:
 
-
 <!-- - If "Capsule" is selected for the first option
   - The "Want us to grind them?" section should be disabled and not able to be opened -->
 <!-- - Order summary texts updates
@@ -37,19 +36,20 @@ The interactive subscription page has a number of specific behaviours, which are
     - "I drink my coffee **as** Filter||Espresso"
     - Keep/Add the grind selection text
   - For all other selections, add the selection title in the blank space where appropriate -->
+
 - Updating per shipment price (shown in "How often should we deliver?" section at the bottom) based on weight selected
-  - If 250g weight is selected
+  <!-- - If 250g weight is selected
     - Every Week price per shipment is $7.20
     - Every 2 Weeks price per shipment is $9.60
-    - Every Month price per shipment is $12.00
-  - If 500g weight is selected
+    - Every Month price per shipment is $12.00 -->
+  <!-- - If 500g weight is selected
     - Every Week price per shipment is $13.00
     - Every 2 Weeks price per shipment is $17.50
-    - Every Month price per shipment is $22.00
-  - If 1000g weight is selected
+    - Every Month price per shipment is $22.00 -->
+  <!-- - If 1000g weight is selected
     - Every Week price per shipment is $22.00
     - Every 2 Weeks price per shipment is $32.00
-    - Every Month price per shipment is $42.00
+    - Every Month price per shipment is $42.00 -->
 - Calculating per month cost for the Order Summary modal
   - If Every Week is selected, the Order Summary modal should show the per shipment price multiplied by 4. For example, if 250g weight is selected, the price would be $28.80/month
   - If Every 2 Weeks is selected, the Order Summary modal should show the per shipment price multiplied by 2. For example, if 250g weight is selected, the price would be $19.20/month
@@ -108,12 +108,12 @@ Remember, if you're looking for feedback on your solution, be sure to ask questi
 
 There are multiple places you can share your solution:
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
+1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack).
 2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
 3. Share your solution on other social channels like LinkedIn.
 4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback.
 
 The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
 
@@ -122,4 +122,3 @@ The more specific you are with your questions the more likely it is that another
 We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
 
 **Have fun building!** 🚀
-

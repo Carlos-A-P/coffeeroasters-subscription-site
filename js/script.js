@@ -128,13 +128,28 @@ card.forEach(selected => {
             }
         }
 
-
+        setSelected(selected)
         
         
         return arr, result
     })
 })
 
+// adds class to selected card
+function setSelected(x){
+    let cardOptions = x.parentElement
+    // console.log(cardOptions.children.length)
+    // console.log(cardOptions.children[1])
+    for (let i = 0; i < cardOptions.children.length; i++) {
+        if (cardOptions.children[i].classList.contains('card-selected')){
+            cardOptions.children[i].classList.remove('card-selected')
+
+        }
+    }
+    x.classList.add('card-selected')
+}
+
+// settings for if capsule was chosen to change summary sentence
 function capsule() {
     for(let i=1; i < arr.length; i++){
         if(arr[i] === undefined){
@@ -158,6 +173,7 @@ function insertChoices(){
     modalSummary.innerHTML = result
 }
 
+// adding the price total at the end
 function priceTotal(){
     let weeklyPrice, twoWeekPrice, monthlyPrice, finalPrice
     const checkout = document.querySelector('[data-checkout]')

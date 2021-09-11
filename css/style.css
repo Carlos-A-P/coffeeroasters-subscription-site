@@ -679,3 +679,12 @@ button.btn:disabled {
 .acc.disabled .card-options {
 	display: none;
 }
+
+.card-selected {
+	background-color: var(--dark-cyan);
+	color: var(--light-cream);
+}
+
+.card-selected h4 {
+	color: var(--light-cream);
+}
