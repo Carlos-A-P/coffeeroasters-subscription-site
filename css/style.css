@@ -68,7 +68,7 @@ header {
 /* section-1 index */
 .section-1 {
 	background-image: url(../assets/home/mobile/image-hero-coffeepress.jpg);
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 95px 20px;
 	border-radius: 10px;
@@ -759,4 +759,8 @@ button.btn:disabled {
 		margin: 0;
 	}
 	/* /section-1 */
+
+	/* section-2 */
+
+	/* /section-2 */
 }
