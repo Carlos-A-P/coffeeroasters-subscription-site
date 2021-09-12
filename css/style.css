@@ -837,6 +837,7 @@ button.btn:disabled {
 		margin: 0 auto 120px;
 	}
 
+	/*  */
 	.steps {
 		margin-bottom: 0px;
 		display: flex;
@@ -850,7 +851,6 @@ button.btn:disabled {
 
 	.step {
 		width: 223px;
-		padding-right: 10px;
 		padding-right: 14px;
 		position: relative;
 	}
