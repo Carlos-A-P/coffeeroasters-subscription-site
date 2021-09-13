@@ -213,7 +213,8 @@ h1 {
 }
 
 .steps {
-	margin-bottom: 80px;
+	margin: 0 auto 80px;
+	max-width: 327px;
 }
 
 /* section-4 index */
@@ -401,7 +402,7 @@ h1 {
 	border-radius: 10px;
 	width: 327px;
 	height: 400px;
-	margin-bottom: 48px;
+	margin: 0 auto 48px;
 }
 
 .a-2 h2 {
@@ -458,6 +459,7 @@ h1 {
 
 .a-4 li {
 	list-style: none;
+	color: var(--grey);
 }
 
 .a-4 ul {
@@ -645,6 +647,10 @@ h3 span.full {
 	padding: 16px 30px;
 }
 
+.checkout span {
+	display: none;
+}
+
 .m-content {
 	position: absolute;
 	top: 36px;
@@ -694,9 +700,23 @@ button.btn:disabled {
 	display: none;
 }
 
+.a-2 p,
+.a-3 p,
+.a-1 p {
+	color: var(--grey);
+}
+
+.step-p h3 {
+	color: var(--light-cream);
+	font-size: 28px;
+	margin: 0px 0 24px;
+	font-weight: 900;
+}
+
 @media (min-width: 768px) {
 	body {
 		padding: 40px;
+		text-align: left;
 	}
 
 	/* header and mobile nav*/
@@ -837,10 +857,10 @@ button.btn:disabled {
 		margin: 0 auto 120px;
 	}
 
-	/*  */
 	.steps {
-		margin-bottom: 0px;
+		margin: 0 auto;
 		display: flex;
+		max-width: none;
 	}
 
 	.step h3 {
@@ -901,4 +921,238 @@ button.btn:disabled {
 		gap: 33px;
 	}
 	/* /footer */
+
+	.a-1 {
+		background-image: url(../assets/about/tablet/image-hero-whitecup.jpg);
+		padding: 118px 223px 118px 58px;
+	}
+
+	.a-1 h1 {
+		font-size: 32px;
+	}
+
+	.commitment {
+		background-image: url(../assets/about/tablet/image-commitment.jpg);
+		grid-area: commitment;
+		width: 281px;
+		height: 470px;
+		margin-bottom: 0;
+		margin-right: 70px;
+	}
+
+	.a-2 {
+		display: grid;
+		grid-template-areas: "commitment c-text";
+		margin: 0 auto 170px;
+		max-width: 936px;
+	}
+
+	.a-2 div:nth-child(2) {
+		grid-area: c-text;
+	}
+
+	.quality {
+		background-image: url(../assets/about/tablet/image-quality.jpg);
+		width: 573px;
+		height: 320px;
+		background-size: cover;
+		margin: 0 auto -150px;
+	}
+
+	.a-3-content {
+		padding: 224px 80px 67px;
+		border-radius: 10px;
+		text-align: center;
+	}
+
+	.a-3 h2 {
+		font-size: 32px;
+	}
+
+	.locations {
+		display: flex;
+		gap: 2vw;
+	}
+
+	.location li {
+		font-size: 16px;
+	}
+
+	.location:nth-child(-n + 3) {
+		margin-bottom: 0;
+	}
+
+	.a-4 {
+		max-width: 740px;
+		margin: 0 auto 144px;
+	}
+
+	.p-1 {
+		background-image: url(../assets/plan/tablet/image-hero-blackcup.jpg);
+		padding: 127px 240px 127px 58px;
+		color: var(--grey);
+	}
+
+	.p-1 p {
+		max-width: 438px;
+	}
+
+	.p-2 {
+		padding: 176px 40px 70px;
+		left: -40px;
+		width: 100vw;
+	}
+
+	.step-p:nth-child(-n + 2) {
+		margin-bottom: 0;
+	}
+
+	.step-p {
+		padding-right: 31px;
+		position: relative;
+	}
+
+	.step-p h3 {
+		margin: 42px 0 38px;
+	}
+
+	.steps .step-p:nth-child(1)::after,
+	.steps .step-p:nth-child(2)::after {
+		content: " ";
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 2px;
+		top: -60px;
+		background: var(--pale-orange);
+		z-index: 0;
+	}
+
+	.steps .step-p::before {
+		content: "";
+		position: relative;
+		display: block;
+		top: -76px;
+		left: -15px;
+		width: 33px;
+		height: 33px;
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		/* background-color: var(--light-cream); */
+		border: 2px solid var(--dark-cyan);
+		z-index: 1;
+	}
+
+	.steps {
+		margin: 0 auto;
+		display: flex;
+		max-width: none;
+	}
+
+	.accordion h2 {
+		font-size: 32px;
+		color: var(--grey);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 60px;
+		margin-bottom: 32px;
+	}
+
+	.card-options {
+		/* height: 0; */
+		flex-direction: row;
+		gap: 10px;
+	}
+
+	.card {
+		padding: 32px 25px 84px;
+		border-radius: 8px;
+	}
+
+	.card p {
+		font-size: 16px;
+	}
+
+	.accordion h4 {
+		margin-bottom: 24px;
+	}
+
+	.right .btn {
+		margin: 0 auto;
+	}
+
+	.summary {
+		background-color: var(--dark-grey-blue);
+		border-radius: 10px;
+		padding: 27px 44px;
+		margin-bottom: 56px;
+	}
+
+	.black-bg {
+		left: 0px;
+		top: 0px;
+	}
+
+	.m-content {
+		padding: 0;
+		margin: 0 auto;
+		width: 540px;
+		position: static;
+	}
+
+	.modal {
+		top: -110px;
+		left: -40px;
+	}
+
+	.modal-box {
+		position: absolute;
+		top: 214px;
+		z-index: 2;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.modal h2 {
+		font-size: 40px;
+		padding: 48px 46px 40px;
+	}
+
+	.summary-c {
+		padding: 56px;
+	}
+
+	.modal h4 {
+		padding-right: 5px;
+	}
+
+	.modal p {
+		font-size: 16px;
+		color: var(--grey);
+	}
+
+	.checkout {
+		margin-top: 46px;
+		display: flex;
+		align-items: center;
+		gap: 13px;
+		justify-content: space-between;
+	}
+
+	.checkout span {
+		display: block;
+		color: var(--dark-grey-blue);
+		font-family: "Fraunces", serif;
+		font-size: 32px;
+		font-weight: 900;
+	}
+
+	.checkout .btn {
+		margin-top: 0;
+		width: 215px;
+		padding: 16px 30px;
+	}
 }

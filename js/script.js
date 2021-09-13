@@ -177,6 +177,7 @@ function insertChoices(){
 function priceTotal(){
     let weeklyPrice, twoWeekPrice, monthlyPrice, finalPrice
     const checkout = document.querySelector('[data-checkout]')
+    const priceSpan = document.getElementById('price')
     if (choice3 === '250g'){
         weeklyPrice = 7.20
         twoWeekPrice = 9.60 
@@ -200,5 +201,12 @@ function priceTotal(){
     }else if(choice5 === 'Every month'){
         finalPrice = monthlyPrice
     }
-    checkout.innerHTML = `Checkout-$${finalPrice.toFixed(2)}/mo`
+
+    if ('(min-width: 768px)'){
+        priceSpan.innerHTML = `$${finalPrice.toFixed(2)} / mo` 
+    } else {
+        checkout.innerHTML = `Checkout-$${finalPrice.toFixed(2)} / mo`        
+    }
+
+    
 }
