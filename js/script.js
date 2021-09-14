@@ -206,7 +206,19 @@ function priceTotal(){
         priceSpan.innerHTML = `$${finalPrice.toFixed(2)} / mo` 
     } else {
         checkout.innerHTML = `Checkout-$${finalPrice.toFixed(2)} / mo`        
-    }
-
-    
+    }    
 }
+
+const leftNav = document.querySelectorAll('[data-l-nav]')
+
+leftNav.forEach (lNav => {
+    lNav.addEventListener('click', () => {
+        let x = lNav.parentElement
+    for (let i = 0; i < x.children.length; i++) {
+        if (x.children[i].classList.contains('clicked')){
+            x.children[i].classList.remove('clicked')
+        }
+    }
+    lNav.classList.add('clicked')
+    })
+})
