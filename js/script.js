@@ -1,15 +1,24 @@
 const openNav = document.getElementById('open-nav')
 const closeNav = document.getElementById('close-nav')
 const mobileNav = document.getElementById('mobile_menu')
+const navToggle = document.getElementById('nav_toggle')
 const modal = document.getElementById('modal')
 const accOptions = document.querySelectorAll('[data-options]')
 const createPlan = document.querySelector('[data-button]')
 
 // toggles mobile meny
 function toggleNav() {
+    console.log(navToggle)
+    
     openNav.classList.toggle('hidden')
     closeNav.classList.toggle('hidden')
     mobileNav.classList.toggle('hidden')
+    
+    if(mobileNav.classList.contains('hidden')){
+        navToggle.setAttribute('aria-expanded', 'false')
+    } else {
+        navToggle.setAttribute('aria-expanded', 'true')
+    }
     // window.removeEventListener('scroll', noScroll);
     scroll()
 }
@@ -20,13 +29,23 @@ function scroll(x) {
     enableScroll(x)   
 }
 
-
-// ppens up accordion menu for each
+// accOptions.setAttribute('aria-expanded', 'false')
+// opens up accordion menu for each
 accOptions.forEach(acc =>{
+    acc.setAttribute('aria-expanded', 'false')
     acc.addEventListener('click', () => {
+        
         const listOptions = acc.parentElement.lastElementChild
+        
         listOptions.classList.toggle('hidden')
         acc.parentElement.firstElementChild.classList.toggle('open')
+
+        if(listOptions.classList.contains('hidden')){
+            acc.setAttribute('aria-expanded', 'false')
+        } else {
+            acc.setAttribute('aria-expanded', 'true')
+        }
+        
     })
 })
 

@@ -533,7 +533,8 @@ h1 {
 	text-align: left;
 }
 
-.accordion h2 {
+.accordion .a-button {
+	font-family: "Fraunces", serif;
 	font-size: 24px;
 	color: var(--grey);
 	display: flex;
@@ -541,23 +542,27 @@ h1 {
 	align-items: center;
 	gap: 60px;
 	margin-bottom: 32px;
+	width: 100%;
+	border: none;
+	background: none;
+	font-weight: 800;
 }
 
-.accordion h2:hover {
+.accordion .a-button:hover {
 	cursor: pointer;
 	color: #585858;
 }
 
-.accordion h2::after {
+.accordion .a-button::after {
 	content: url(../assets/plan/desktop/icon-arrow.svg);
 	transform: rotate(0deg);
 }
 
-.accordion h2.open::after {
+.accordion .a-button.open::after {
 	transform: rotate(180deg);
 }
 
-.acc.disabled h2.open::after {
+.acc.disabled .a-button.open::after {
 	transform: rotate(0deg);
 }
 
@@ -580,6 +585,11 @@ h1 {
 	padding: 25px 45px 25px 25px;
 	background-color: #f4f1eb;
 	border-radius: 8px;
+	border: none;
+}
+
+.card p {
+	font-family: "Barlow", sans-serif;
 }
 
 .card:hover {
@@ -1097,7 +1107,7 @@ button.btn:disabled {
 		/* max-width: none; */
 	}
 
-	.accordion h2 {
+	.accordion .a-button {
 		font-size: 32px;
 		color: var(--grey);
 		display: flex;
@@ -1493,7 +1503,7 @@ button.btn:disabled {
 		max-width: 730px;
 	}
 
-	.accordion h2 {
+	.accordion .a-button {
 		font-size: 40px;
 		margin-bottom: 56px;
 	}

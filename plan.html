@@ -20,7 +20,7 @@
         <div class="logo">
           <img src="assets/shared/desktop/logo.svg" alt="logo">
         </div>
-        <button type="button"  onclick="toggleNav()" class="nav_toggle" aria-expanded="false" aria-label="Toggle Navigation">
+        <button type="button"  onclick="toggleNav()" class="nav_toggle" aria-expanded="false" aria-label="Toggle Navigation" id="nav_toggle">
           <img id="open-nav" src="assets/shared/mobile/icon-hamburger.svg" alt="open menu">
           <img id="close-nav" class="hidden" src="assets/shared/mobile/icon-close.svg" alt="close menu">
         </button>
@@ -91,88 +91,88 @@
         <div class="right">
           <div class="accordion">
             <div class="acc" id="a-1">
-              <h2 data-options tabindex="0">How do you drink your coffee?</h2>
+              <button class="a-button" data-options>How do you drink your coffee?</button>
               <div class="card-options hidden" data-card-options>
-                <div class="card" data-card>
+                <button class="card" data-card>
                   <h4>Capsule</h4>
                   <p>Compatible with Nespresso systems and similar brewers</p>
-                </div>
-                <div class="card" data-card>
+                </button>
+                <button class="card" data-card>
                   <h4>Filter</h4>
                   <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
-                </div>
-                <div class="card" data-card>
+                </button>
+                <button class="card" data-card>
                   <h4>Espresso</h4>
                   <p>Dense and finely ground beans for an intense, flavorful experience</p>
-                </div>
+                </button>
               </div>
             </div>
             <div class="acc" id="a-2">
-              <h2 data-options tabindex="0">What type of coffee?</h2>
+              <button class="a-button" data-options>What type of coffee?</button>
               <div class="card-options hidden">
-                <div class="card" data-card>
+                <button class="card" data-card>
                   <h4>Single origin</h4>
                   <p>Distinct, high quality coffee from a specific family-owned farm</p>
-                </div>
-                <div class="card" data-card>
+                </button>
+                <button class="card" data-card>
                   <h4>Decaf</h4>
                   <p>Just like regular coffee, except the caffeine has been removed</p>
-                </div>
-                <div class="card" data-card>
+                </button>
+                <button class="card" data-card>
                   <h4>Blended</h4>
                   <p>Combination of two or three dark roasted beans of organic coffees</p>
-                </div>
+                </button>
               </div>
             </div>
             <div class="acc" id="a-3">
-              <h2 data-options tabindex="0">How much would you like?</h2>
+              <button class="a-button" data-options>How much would you like?</button>
               <div class="card-options hidden">
-                <div class="card" data-card>
+                <button class="card" data-card>
                   <h4>250g</h4>
                   <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
-                </div>
-                <div class="card" data-card>
+                </button>
+                <button class="card" data-card>
                   <h4>500g</h4>
                   <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
-                </div>
-                <div class="card" data-card>
+                </button>
+                <button class="card" data-card>
                   <h4>1000g</h4>
                   <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
-                </div>
+                </button>
               </div>
             </div>
             <div id="grindOption" class="acc">
-              <h2 data-options id ="a-4" tabindex="0">Want us to grind them?</h2>
+              <button class="a-button" data-options id ="a-4">Want us to grind them?</button>
               <div class="card-options hidden">
-                <div class="card" data-card>
+                <button class="card" data-card>
                   <h4>Wholebean</h4>
                   <p>Best choice if you cherish the full sensory experience</p>
-                </div>
-                <div class="card" data-card>
+                </button>
+                <button class="card" data-card>
                   <h4>Filter</h4>
                   <p>For drip or pour-over coffee methods such as V60 or Aeropress</p>
-                </div>
-                <div class="card" data-card>
+                </button>
+                <button class="card" data-card>
                   <h4>Cafetiére</h4>
                   <p>Course ground beans specially suited for french press coffee</p>
-                </div>
+                </button>
               </div>
             </div>
             <div class="acc" id="a-5">
-              <h2 data-options tabindex="0">How often should we deliver?</h2>
+              <button class="a-button" data-options>How often should we deliver?</button>
               <div class="card-options hidden">
-                <div class="card" data-card>
+                <button class="card" data-card>
                   <h4>Every week</h4>
                   <p>$14.00 per shipment. Includes free first-class shipping.</p>
-                </div>
-                <div class="card" data-card>
+                </bu>
+                <button class="card" data-card>
                   <h4>Every 2 weeks</h4>
                   <p>$17.25 per shipment. Includes free priority shipping.</p>
-                </div>
-                <div class="card" data-card>
+                </bu>
+                <button class="card" data-card>
                   <h4>Every month</h4>
                   <p>$22.50 per shipment. Includes free priority shipping.</p>
-                </div>
+                </bu>
               </div>
             </div>
           </div>
