@@ -792,6 +792,10 @@ button.btn:disabled {
 		font-size: 12px;
 	}
 
+	.desktop-nav a:hover {
+		color: rgb(63, 63, 63);
+	}
+
 	.mobile button {
 		display: none;
 	}
