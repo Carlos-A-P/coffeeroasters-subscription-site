@@ -10,9 +10,9 @@ const createPlan = document.querySelector('[data-button]')
 function toggleNav() {
     console.log(navToggle)
     
-    openNav.classList.toggle('visible')
-    closeNav.classList.toggle('visible')
-    mobileNav.classList.toggle('visible')
+    // openNav.classList.toggle('visible')
+    // closeNav.classList.toggle('visible')
+    // mobileNav.classList.toggle('visible')
 
     openNav.classList.toggle('hidden')
     closeNav.classList.toggle('hidden')
