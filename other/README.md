@@ -1,124 +1,217 @@
-# Frontend Mentor - Coffeeroasters subscription site
+# Coffeeroasters subscription site
 
-![Design preview for the Coffeeroasters subscription site coding challenge](./preview.jpg)
+- Live website -(https://cpwd-coffeeroasters.netlify.app)
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for purchasing this premium Frontend Mentor coding challenge.
+- [The challenge](#the-challenge)
+- [Screenshot](#screenshot)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects. These premium challenges are perfect portfolio pieces, so please feel free to use what you create in your portfolio to show others.
+### The challenge
 
-**To do this challenge, you need a good understanding of HTML, CSS, and JavaScript.**
-
-## The challenge
-
-Your challenge is to build out this multi-page coffee subscription website and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout for each page depending on their device's screen size
 - See hover states for all interactive elements throughout the site
-- Make selections to create a coffee subscription and see an order summary modal of their choices (details provided below)
+- Make selections to create a coffee subscription and see an order summary modal of their choices
 
 ### Expected bahaviour
 
 The interactive subscription page has a number of specific behaviours, which are listed below:
 
-<!-- - If "Capsule" is selected for the first option
-  - The "Want us to grind them?" section should be disabled and not able to be opened -->
-<!-- - Order summary texts updates
+- If "Capsule" is selected for the first option
+  - The "Want us to grind them?" section should be disabled and not able to be opened
+- Order summary texts updates
+
   - If "Capsule" is selected, update the order summary text to:
     - "I drink my coffee **using** Capsules"
     - Remove the grind selection text
   - If "Filter" or "Espresso" are selected, update the order summary text to:
     - "I drink my coffee **as** Filter||Espresso"
     - Keep/Add the grind selection text
-  - For all other selections, add the selection title in the blank space where appropriate -->
+  - For all other selections, add the selection title in the blank space where appropriate
 
 - Updating per shipment price (shown in "How often should we deliver?" section at the bottom) based on weight selected
-  <!-- - If 250g weight is selected
+  - If 250g weight is selected
     - Every Week price per shipment is $7.20
     - Every 2 Weeks price per shipment is $9.60
-    - Every Month price per shipment is $12.00 -->
-  <!-- - If 500g weight is selected
+    - Every Month price per shipment is $12.00
+  - If 500g weight is selected
     - Every Week price per shipment is $13.00
     - Every 2 Weeks price per shipment is $17.50
-    - Every Month price per shipment is $22.00 -->
-  <!-- - If 1000g weight is selected
+    - Every Month price per shipment is $22.00
+  - If 1000g weight is selected
     - Every Week price per shipment is $22.00
     - Every 2 Weeks price per shipment is $32.00
-    - Every Month price per shipment is $42.00 -->
+    - Every Month price per shipment is $42.00
 - Calculating per month cost for the Order Summary modal
   - If Every Week is selected, the Order Summary modal should show the per shipment price multiplied by 4. For example, if 250g weight is selected, the price would be $28.80/month
   - If Every 2 Weeks is selected, the Order Summary modal should show the per shipment price multiplied by 2. For example, if 250g weight is selected, the price would be $19.20/month
   - If Every Month is selected, the Order Summary modal should show the per shipment price multiplied by 1. For example, if 250g weight is selected, the price would be $12.00/month
 
-The designs show these differences, so you can refer to them to get an idea of what's needed for the different states.
+## My process
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+### End Result
 
-Your task is to build out the project to the design file provided. We provide both Sketch and Figma versions of the design, so you can choose which tool you prefer to use. You can download the design file on the platform. **Please be sure not to share them with anyone else.** The design download comes with a `README.md` file as well to help you get set up.
+- First Page: Main
 
-All the required assets for this project are in the `/assets` folder. The assets are already exported for the correct screen size and optimized. Some images are reusable at multiple screen sizes. So if you don't see an image in a specific folder, it will typically be in another folder for that page.
+![cpwd-coffeeroasters netlify app_plan html](https://user-images.githubusercontent.com/85038929/133548116-999b06f1-2c42-4e68-a3f7-6705bf1094e1.png)
 
-The design system in the design file will give you more information about the various colors, fonts, and styles used in this project.
+-Second Page: About
 
-## Building your project
+![cpwd-coffeeroasters netlify app_about html](https://user-images.githubusercontent.com/85038929/133548210-357652e7-1761-4fe4-b89e-67c41cf164b8.png)
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+-Third Page: Plan
 
-1. Separate the `starter-code` from the rest of this project and rename it to something meaningful for you. Initialize the codebase as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/). **⚠️ IMPORTANT ⚠️: There are already a couple of `.gitignore` files in this project. Please do not remove them or change the content of the files. If you create a brand new project, please use the `.gitignore` files provided in your new codebase. This is to avoid the accidental upload of the design files to GitHub. With these premium challenges, please be sure not to share the design files in your GitHub repo. Thanks!**
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+![cpwd-coffeeroasters netlify app_plan html (1)](https://user-images.githubusercontent.com/85038929/133548445-777761d4-e52c-429f-a88a-ebeb11ac6e5c.png)
 
-## Deploying your project
+-modal
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+![cpwd-coffeeroasters netlify app_plan html (2)](https://user-images.githubusercontent.com/85038929/133548525-2e236be2-cc9d-4df5-9b80-9b568b739273.png)
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+### Built with
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+- Semantic HTML5 markup
+- CSS custom properties
+- CSS FlexBox
+- JavaScript
+- Media Queries
 
-## Create a custom `README.md`
+### What I learned
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+This was a tough challenge that tested a lot of my javascript skills and organizational skills. It was a lot more than I expected but overall a very educational experience. I learned that there are many ways to do things, but some may be much easier and efficient than others. For example, my accordion was comprised of many buttons, but I first started by using div elements along with click event listeners. I later discovered that it was very tedious to make it accessible and decided to go with buttons instead, which comprised its own challenges with inner tags. Overall, I wanted to make an app that was mainly functional and accessible, so I didn't focus too much on transitions. I enjoyed this project, and I certainly learned a lot from it.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+- This portion of my JavaScript was my event listener for my cards within my accordion. Within the first portion I was setting up my variables for each option.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+```JavaScript
+card.forEach(selected => {
+    selected.addEventListener('click', () => {
+        let choice = selected.firstElementChild.innerHTML
+        console.log()
+        if (choice === 'Capsule' || choice === 'Espresso') {
+            choice1 = choice
+            createPlan.classList.add('disabled')
+        }else if (choice === 'Single origin' || choice === 'Decaf' || choice === 'Blended') {
+            choice2 = choice
+        }
+        if (choice === '250g' || choice === '500g' || choice === '1000g') {
+            choice3 = choice
+        }
+        if (choice === 'Wholebean' || choice === 'Cafetiére') {
+            choice4 = choice
+        }
+        if (choice === 'Every week' || choice === 'Every 2 weeks' || choice === 'Every month') {
+            choice5 = choice
+        }
 
-## Submitting your solution
+        const acc1 = selected.parentElement.parentElement.firstElementChild.innerHTML
+        if (choice === 'Filter' && acc1 === 'How do you drink your coffee?') {
+            choice1 = choice
+            createPlan.classList.add('disabled')
+            createPlan.innerHTML = `<a>Create my plan!</a>`
+        } else if (choice === 'Filter' && acc1 !== 'How do you drink your coffee?') {
+            choice4 = choice
+        }
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+        arr = [choice1, choice2, choice3, choice4, choice5]
+        if(choice1 === 'Capsule'){
+            grindOption.classList.add('disabled')
+            createPlan.innerHTML = `<a>Create my plan!</a>`
+            capsule()
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+            if(choice1 !== undefined && choice2 !== undefined && choice3 !== undefined && choice5 !== undefined) {
+                createPlan.classList.remove('disabled')
+                createPlan.innerHTML = `<a href="#modal" onclick="togglePlan()">Create my plan!</a>`
+                priceTotal()
+            }
+        }else{
+            for(let i=0; i < arr.length; i++){
+                if(arr[i] === undefined){
+                    arr[i] = `<span></span>`
+                } else{
+                    arr[i] = `<span class="full">${arr[i]}</span>`
+                }
+            }
+            grindOption.classList.remove('disabled')
 
-**⚠️ IMPORTANT ⚠️: With these premium challenges, please be sure not to upload the design files to GitHub when you're submitting to the platform and sharing it around. If you've created a brand new project, the easiest way to do that is to copy across the `.gitignore` provided in this starter project.**
+            summary.innerHTML = `“I drink my coffee as ${arr[0]}, with a ${arr[1]} type of bean. ${arr[2]} ground ala ${arr[3]}, sent to me ${arr[4]}.”`
+            result = summary.innerHTML
 
-## Sharing your solution
+            if(choice1 !== undefined && choice2 !== undefined && choice3 !== undefined && choice4 !== undefined && choice5 !== undefined) {
+                createPlan.classList.remove('disabled')
+                createPlan.innerHTML = `<a href="#modal" onclick="togglePlan()">Create my plan!</a>`
+                priceTotal()
+            }
+        }
 
-There are multiple places you can share your solution:
+        setSelected(selected)
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack).
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback.
+        return arr, result
+    })
+})
+```
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+- In the syntax below, I am checking to see if the user chose the option 'Filter' either for the first time or the second time in order to correctly fill in the blanks within the summery at the bottom of the page. If I didn't do this then the summery will fill in both lines for option 1 and option 4 before the user got to the 4th option.
 
-## Got feedback for us?
+```JavaScript
+        const acc1 = selected.parentElement.parentElement.firstElementChild.innerHTML
+        if (choice === 'Filter' && acc1 === 'How do you drink your coffee?') {
+            choice1 = choice
+            createPlan.classList.add('disabled')
+            createPlan.innerHTML = `<a>Create my plan!</a>`
+        } else if (choice === 'Filter' && acc1 !== 'How do you drink your coffee?') {
+            choice4 = choice
+        }
+```
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+- After I prepared to place the correct variables in their appropriate lines through the following code.
 
-**Have fun building!** 🚀
+- Here I created an array which comprises of the different choices picked by the user. in the first 'if' statement I placed a 'disabled' class on my checkout button depending on the first choice.
+- I then made a 'for' loop which would cycle through my array, checking to see if its undefined. If it is I would place a empty span so keep the Underline in the values that haven't been assigned yet
+- I removed the disabled class from the grind option incase the user chose the capsule option before the other two options for choice 1. I'd then insert a string via template literal along with my variables
+
+```JavaScript
+        arr = [choice1, choice2, choice3, choice4, choice5]
+        if(choice1 === 'Capsule'){
+            grindOption.classList.add('disabled')
+            createPlan.innerHTML = `<a>Create my plan!</a>`
+            capsule()
+
+            if(choice1 !== undefined && choice2 !== undefined && choice3 !== undefined && choice5 !== undefined) {
+                createPlan.classList.remove('disabled')
+                createPlan.innerHTML = `<a href="#modal" onclick="togglePlan()">Create my plan!</a>`
+                priceTotal()
+            }
+        }else{
+            for(let i=0; i < arr.length; i++){
+                if(arr[i] === undefined){
+                    arr[i] = `<span></span>`
+                } else{
+                    arr[i] = `<span class="full">${arr[i]}</span>`
+                }
+            }
+            grindOption.classList.remove('disabled')
+
+            summary.innerHTML = `“I drink my coffee as ${arr[0]}, with a ${arr[1]} type of bean. ${arr[2]} ground ala ${arr[3]}, sent to me ${arr[4]}.”`
+            result = summary.innerHTML
+```
+
+- in the case I ran the capsule option instead in my first choise, I essentially do the same thing but instead with fewer options and a different string is inserted in my summery.innerHTML
+
+### Useful resources
+
+- [Debugging JavaScript in Visual Studio Code and Google Chrome](https://www.youtube.com/watch?v=AX7uybwukkk&ab_channel=JamesQQuick) - this video taught me how to debug my javascript using the debugger tool in developer tools
+
+## Author
+
+- Website - [Carlos Perez](https://cpwd-coffeeroasters.netlify.app)
+- Frontend Mentor - [@Carlos-A-P](https://www.frontendmentor.io/profile/Carlos-A-P)
+- Twitter - [@WDCarlosP](https://www.twitter.com/WDCarlosP)
