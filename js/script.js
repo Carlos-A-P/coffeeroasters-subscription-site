@@ -10,6 +10,10 @@ const createPlan = document.querySelector('[data-button]')
 function toggleNav() {
     console.log(navToggle)
     
+    openNav.classList.toggle('visible')
+    closeNav.classList.toggle('visible')
+    mobileNav.classList.toggle('visible')
+
     openNav.classList.toggle('hidden')
     closeNav.classList.toggle('hidden')
     mobileNav.classList.toggle('hidden')
@@ -90,6 +94,8 @@ const grindOption = document.getElementById('grindOption')
 let modalSummary = document.getElementById('modalSummary')
 let choice1, choice2, choice3, choice4, choice5
 let result
+createPlan.innerHTML = `<a>Create my plan!</a>`
+
 // adds options for end summary at the press of the button
 card.forEach(selected => {
     selected.addEventListener('click', () => {
@@ -97,7 +103,7 @@ card.forEach(selected => {
         console.log()
         if (choice === 'Capsule' || choice === 'Espresso') {
             choice1 = choice
-            createPlan.setAttribute('disabled', '')
+            createPlan.classList.add('disabled')
         }else if (choice === 'Single origin' || choice === 'Decaf' || choice === 'Blended') {
             choice2 = choice
         }
@@ -114,7 +120,8 @@ card.forEach(selected => {
         const acc1 = selected.parentElement.parentElement.firstElementChild.innerHTML
         if (choice === 'Filter' && acc1 === 'How do you drink your coffee?') {
             choice1 = choice
-            createPlan.setAttribute('disabled', '')
+            createPlan.classList.add('disabled')
+            createPlan.innerHTML = `<a>Create my plan!</a>`
         } else if (choice === 'Filter' && acc1 !== 'How do you drink your coffee?') {
             choice4 = choice
         }
@@ -122,10 +129,12 @@ card.forEach(selected => {
         arr = [choice1, choice2, choice3, choice4, choice5]
         if(choice1 === 'Capsule'){
             grindOption.classList.add('disabled')
+            createPlan.innerHTML = `<a>Create my plan!</a>`
             capsule()
 
             if(choice1 !== undefined && choice2 !== undefined && choice3 !== undefined && choice5 !== undefined) {
-                createPlan.removeAttribute('disabled')
+                createPlan.classList.remove('disabled')
+                createPlan.innerHTML = `<a href="#modal" onclick="togglePlan()">Create my plan!</a>`
                 priceTotal()
             }            
         }else{
@@ -142,7 +151,8 @@ card.forEach(selected => {
             result = summary.innerHTML
 
             if(choice1 !== undefined && choice2 !== undefined && choice3 !== undefined && choice4 !== undefined && choice5 !== undefined) {
-                createPlan.removeAttribute('disabled')
+                createPlan.classList.remove('disabled')
+                createPlan.innerHTML = `<a href="#modal" onclick="togglePlan()">Create my plan!</a>`
                 priceTotal()
             }
         }
@@ -179,11 +189,6 @@ function capsule() {
     }
     summary.innerHTML = `“I drink my coffee using <span class="full">${choice1}</span>, with a ${arr[1]} type of bean. ${arr[2]}, sent to me ${arr[4]}.”`
     result = summary.innerHTML
-    // if(choice1 !== undefined && choice2 !== undefined && choice4 !== undefined && choice5 !== undefined) {
-    //     createPlan.removeAttribute('disabled')
-    // }
-
-
 }
 
 // this inserts the summary into the modal when the button is clicked
@@ -221,11 +226,8 @@ function priceTotal(){
         finalPrice = monthlyPrice
     }
 
-    if ('(min-width: 768px)'){
         priceSpan.innerHTML = `$${finalPrice.toFixed(2)} / mo` 
-    } else {
-        checkout.innerHTML = `Checkout-$${finalPrice.toFixed(2)} / mo`        
-    }    
+        checkout.innerHTML = `Checkout - $${finalPrice.toFixed(2)} / mo`        
 }
 
 const leftNav = document.querySelectorAll('[data-l-nav]')

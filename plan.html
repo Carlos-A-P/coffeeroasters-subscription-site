@@ -94,16 +94,16 @@
               <button class="a-button" data-options>How do you drink your coffee?</button>
               <div class="card-options hidden" data-card-options>
                 <button class="card" data-card>
-                  <h4>Capsule</h4>
-                  <p>Compatible with Nespresso systems and similar brewers</p>
+                  <span class="a-title">Capsule</span>
+                  <span class="acc-p">Compatible with Nespresso systems and similar brewers</span>
                 </button>
                 <button class="card" data-card>
-                  <h4>Filter</h4>
-                  <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                  <span class="a-title">Filter</span>
+                  <span class="acc-p">For pour over or drip methods like Aeropress, Chemex, and V60</span>
                 </button>
                 <button class="card" data-card>
-                  <h4>Espresso</h4>
-                  <p>Dense and finely ground beans for an intense, flavorful experience</p>
+                  <span class="a-title">Espresso</span>
+                  <span class="acc-p">Dense and finely ground beans for an intense, flavorful experience</span>
                 </button>
               </div>
             </div>
@@ -111,16 +111,16 @@
               <button class="a-button" data-options>What type of coffee?</button>
               <div class="card-options hidden">
                 <button class="card" data-card>
-                  <h4>Single origin</h4>
-                  <p>Distinct, high quality coffee from a specific family-owned farm</p>
+                  <span class="a-title">Single origin</span>
+                  <span class="acc-p">Distinct, high quality coffee from a specific family-owned farm</span>
                 </button>
                 <button class="card" data-card>
-                  <h4>Decaf</h4>
-                  <p>Just like regular coffee, except the caffeine has been removed</p>
+                  <span class="a-title">Decaf</span>
+                  <span class="acc-p">Just like regular coffee, except the caffeine has been removed</span>
                 </button>
                 <button class="card" data-card>
-                  <h4>Blended</h4>
-                  <p>Combination of two or three dark roasted beans of organic coffees</p>
+                  <span class="a-title">Blended</span>
+                  <span class="acc-p">Combination of two or three dark roasted beans of organic coffees</span>
                 </button>
               </div>
             </div>
@@ -128,16 +128,16 @@
               <button class="a-button" data-options>How much would you like?</button>
               <div class="card-options hidden">
                 <button class="card" data-card>
-                  <h4>250g</h4>
-                  <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+                  <span class="a-title">250g</span>
+                  <span class="acc-p">Perfect for the solo drinker. Yields about 12 delicious cups.</span>
                 </button>
                 <button class="card" data-card>
-                  <h4>500g</h4>
-                  <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
+                  <span class="a-title">500g</span>
+                  <span class="acc-p">Perfect option for a couple. Yields about 40 delectable cups.</span>
                 </button>
                 <button class="card" data-card>
-                  <h4>1000g</h4>
-                  <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
+                  <span class="a-title">1000g</span>
+                  <span class="acc-p">Perfect for offices and events. Yields about 90 delightful cups.</span>
                 </button>
               </div>
             </div>
@@ -145,16 +145,16 @@
               <button class="a-button" data-options id ="a-4">Want us to grind them?</button>
               <div class="card-options hidden">
                 <button class="card" data-card>
-                  <h4>Wholebean</h4>
-                  <p>Best choice if you cherish the full sensory experience</p>
+                  <span class="a-title">Wholebean</span>
+                  <span class="acc-p">Best choice if you cherish the full sensory experience</span>
                 </button>
                 <button class="card" data-card>
-                  <h4>Filter</h4>
-                  <p>For drip or pour-over coffee methods such as V60 or Aeropress</p>
+                  <span class="a-title">Filter</span>
+                  <span class="acc-p">For drip or pour-over coffee methods such as V60 or Aeropress</span>
                 </button>
                 <button class="card" data-card>
-                  <h4>Cafetiére</h4>
-                  <p>Course ground beans specially suited for french press coffee</p>
+                  <span class="a-title">Cafetiére</span>
+                  <span class="acc-p">Course ground beans specially suited for french press coffee</span>
                 </button>
               </div>
             </div>
@@ -162,17 +162,17 @@
               <button class="a-button" data-options>How often should we deliver?</button>
               <div class="card-options hidden">
                 <button class="card" data-card>
-                  <h4>Every week</h4>
-                  <p>$14.00 per shipment. Includes free first-class shipping.</p>
-                </bu>
+                  <span class="a-title">Every week</span>
+                  <span class="acc-p">$14.00 per shipment. Includes free first-class shipping.</span>
+                </button>
                 <button class="card" data-card>
-                  <h4>Every 2 weeks</h4>
-                  <p>$17.25 per shipment. Includes free priority shipping.</p>
-                </bu>
+                  <span class="a-title">Every 2 weeks</span>
+                  <span class="acc-p">$17.25 per shipment. Includes free priority shipping.</span>
+                </button>
                 <button class="card" data-card>
-                  <h4>Every month</h4>
-                  <p>$22.50 per shipment. Includes free priority shipping.</p>
-                </bu>
+                  <span class="a-title">Every month</span>
+                  <span class="acc-p">$22.50 per shipment. Includes free priority shipping.</span>
+                </button>
               </div>
             </div>
           </div>
@@ -180,19 +180,24 @@
             <p>Order Summary</p>
             <h3 id="summary">“I drink my coffee as <span class=""></span>, with a <span></span> type of bean. <span></span> ground ala <span></span>, sent to me <span></span>.”</h3>
           </div>
-          <button data-button disabled type="button" class="btn" onclick="togglePlan()"><a href="#modal">Create my plan!</a></button>
+          <div data-button class="button btn disabled" >
+            <a>Create my plan!</a>
+          </div>
         </div>
       </section>
       <div class="modal hidden" id="modal">
         <div class="modal-box">
           <div class="m-content">
-            <h2 id='order_sum'>Order Summary</h2>
+            <button id='order_sum'>Order Summary</button>
             <div class="summary-c">
               <h4 id="modalSummary">“I drink my coffee as <span></span>, with a <span></span> type of bean. <span></span> ground ala <span></span>, sent to me <span></span>.”</h4>
               <p>Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout.</p>
               <div class="checkout">
                 <span id="price">$14.00 / mo</span>
-                <div class="btn"><a href="plan.html" data-checkout>Checkout</a></div>
+                <div class="btn">
+                  <a href="plan.html" class ="mobile-co" data-checkout>Checkout - $14.00 / mo</a>
+                  <a href="plan.html" class = data-checkout>Checkout</a>
+                </div>
               </div>          
             </div>          
           </div>          
