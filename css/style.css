@@ -1231,7 +1231,7 @@ span.a-title {
 
 	.modal-box {
 		position: absolute;
-		top: 214px;
+		top: 13vh;
 		z-index: 2;
 		width: 100%;
 		display: flex;
